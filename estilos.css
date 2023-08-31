@@ -7,42 +7,24 @@ body {
 	margin: 0;
 }
 
+/* Header
+**********/
 .contenedor {
 	max-width: 860px;
 	width: 80%;
-	margin: 0 auto;
+	margin: auto;
+	display: flex;
+	align-items: flex-end;
 }
-.sobremi,
-.separacion {
-	display: inline;
-	float: left;
-	position: relative;
-	margin-left: 1%;
-}
-.contenedor .sobremi {
-	width: 45%;
-	margin-right: 30px;
-}
-
-.contenedor .separacion {
-	width: 98%;
-}
-/**********
-/* Header
-**********/
 
 header {
 	background:#836;
 	border-bottom: 1px solid #848484;
-	padding: 19px 0;
+	padding: 29px 0;
 	overflow: hidden;
 }
 
-header figure {
-	float: left;
-}
-
-header figure img {
+header img {
 	border-radius: 90px;
 	border: solid #fff;
 	height: 175px;
@@ -50,32 +32,27 @@ header figure img {
 	position: relative;
 }
 
-header section {
-	float: right;
-	text-align: center;
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 26%;
 }
 
-header section h1 {
+h1 {
 	color: #fff;
 	font: 400 40px oswald, sans-serif;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	line-height: 0px;
 }
 
-header section h2 {
+h2 {
 	color: #fff;
 	font-style: italic;
 	font: 400 20px oswald, sans-serif;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-#cv {
-	width: 45px;
-	height: 55px;
-	-ms-transform: rotate(15deg);
-	-webkit-transform: rotate(15deg);
-	transform: rotate(15deg);
-	box-shadow: 1px 1px 1px #888888;
-}
 .nav li{
 	color: #fff;
 	display: flex;
@@ -86,7 +63,7 @@ header section h2 {
 .nav li p{
 	padding-left: 5px;
 }
-/***************
+
 /* Main
 ***************/
 
@@ -94,151 +71,169 @@ p {
 	font: 400 14px oswald, sans-serif;
 }
 
-main[role="main"] {
-	padding: 21px 0;
-	overflow: hidden;
+main {
+	max-width: 860px;
+	width: 80%;
+	margin: auto;
+	padding: 29px 0;
 }
 
-main[role="main"] > div {
-	margin-top: 63px;
-}
-
-main[role="main"] h3 {
+main h3 {
 	border-bottom: 1px solid #bdbdbd;
 	padding: 0 0 10px 0px;
-	margin-top: 0px;
-	position: relative;
+	margin-top: 60px;
 	font: 400 20px oswald, sans-serif;
 }
 
-.experiencias ul,
-.info ul {
-	padding: 0px;
-}
-
-main[role="main"] h4 {
-	margin-bottom: 0px;
-}
-
-main[role="main"] h4{
+main h4{
 	color: #836;
 	font-weight: normal;
-	font: 400 17px oswald, sans-serif;
+	font: 400 18px oswald, sans-serif;
+	line-height: 1px;
 }
 
-.experiencias li,
-.info li {
+.separacion {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.sobremi {
+	margin-right: 80px;
+	width: 400px;
+}
+.grupo2{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin: auto;
+	width: 400px;
+}
+
+.experiencias li{
 	margin-bottom: 28px;
 	list-style: none;
 }
 
+.experiencias ul{
+	padding: 2px 0px;
+}
+
 .grupo2 .barras {
 	padding: 0px;
+	margin: 2px 0px;
 }
 
 .grupo2 .barras li {
-	margin-bottom: 21px;
-	position: relative;
+	margin-bottom: 20px;
+	position:relative;
 	list-style: none;
 	font: 400 14px oswald, sans-serif;
 }
 
 .grupo2 .barras li:after {
-	background: #e1e1e1;
+	background: #e1e1el;
 	bottom: -4px;
-	content: " ";
-	display: block;
 	height: 5px;
-	position: absolute;
+	position: relative;
 	width: 100%;
 }
 
 .grupo2 .barras li span {
 	background: #836;
 	bottom: -4px;
-	content: " ";
 	display: block;
 	height: 5px;
-	left: 0;
-	position: absolute;
+	position: relative;
 	width: inherit;
 	z-index: 1;
 }
 
-.sobremi ul {
-	padding: 15px;
-}
-
-.sobremi ul li {
+.datos ul li {
 	font: 400 15px oswald, sans-serif;
 	margin-bottom: 3px;
 	list-style: none;
 }
 
-.sobremi .informacion li:before,
-.sobremi .contact li:before {
-	content: "\2022";
-	font: 400 15px oswald, sans-serif;
-	margin-bottom: 3px;
-	display: block;
-	position: relative;
-	max-width: 0;
-	max-height: 0;
-	left: -15px;
-	top: 0;
-	color: #836;
-	font-size: 20px;
+.datos ul{
+		padding-left: 0px;
 }
 
-.separacion .gris {
+.datos{
+	margin-left: 80px;
+	width: 360px;
+}
+
+.tres img{
+	width: 50px;
+	height: 50px;
+	margin-left: 0px;
+	margin-bottom: 50px;
+	margin-right: 40px;
+}
+
+.dos img{
+	width: 50px;
+	height: 50px;
+	margin-left: 0px;
+	margin-right: 40px;
+}
+
+.gris {
 	background-position: 0 -2px;
 	color: #848484;
 	font: 400 15px oswald, sans-serif;
 }
 
-.datos{
-	background-position: 0 -22px;
-	color: #999;
-	font: 400 15px oswald, sans-serif;
+.iconos{
+	width: 400px;
 }
 
-.phone {
-	background-position: 0 -40px;
+.info li {
+	margin: 0px;
+	list-style: none;
+	width: 400px;
 }
 
-.mail {
-	background-position: 0 -58px;
+.info ul{
+	display: flex;
+	flex-direction: column;
 }
 
-.blog {
-	background-position: 0 -80px;
+.info{
+	display: flex;
+	flex-direction: row;
 }
 
-.social {
-	width: 40px;
-	height: 40px;
-	margin: 10px 38px 25px 38px;
+.formacion1 ul{
+	padding: 0px 0px;
+	width: 480px;
 }
 
-.formacion1 {
-	float: left;
-}
-
-.formacion2 {
-	float: right;
+.formacion2 ul{
+	padding: 0px 0px;
 }
 
 /*footer
 *************/
 
 footer {
+	margin: auto;
+	padding: 29px 0;
 	background:#836;
-	padding: 15px 240px;
+	margin-top: 40px;
 }
 .fin p {
 	color: #fff;
 	font-weight:lighter;
 	display: inline;
-	padding-left: 15px;
+	padding-left: 25px;
 	font-size: 13px;
+}
+
+.fin{
+	margin:auto;
+	max-width: 860px;
+	width: 80%;
 }
