@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-
+/* No usar FLOAT, estructurar con FLEXBOX - Felicitaciones por usar tanto CSS!*/
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 body {
@@ -230,10 +230,4 @@ footer {
 	display: inline;
 	padding-left: 25px;
 	font-size: 13px;
-}
-
-.fin{
-	margin:auto;
-	max-width: 860px;
-	width: 80%;
 }
