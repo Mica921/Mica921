@@ -11,8 +11,9 @@ body {
 .contenedor {
 	max-width: 860px;
 	width: 80%;
-	margin: auto;
 	display: flex;
+	margin: auto;
+	/*intente cambiar el margin por justify-content: center pero no funciono, no se alineo como tendria*/
 	align-items: flex-end;
 }
 
@@ -31,7 +32,7 @@ header img {
 	position: relative;
 }
 
-section {
+.titulo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -52,14 +53,13 @@ h2 {
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-.nav li{
+.datos2 li{
 	color: #fff;
 	display: flex;
 	position: relative;
-	list-style: none;
 	font: 400 14px oswald, sans-serif;
 }
-.nav li p{
+.datos2 li p{
 	padding-left: 5px;
 }
 
@@ -112,7 +112,6 @@ main h4{
 
 .experiencias li{
 	margin-bottom: 28px;
-	list-style: none;
 }
 
 .experiencias ul{
@@ -127,7 +126,6 @@ main h4{
 .grupo2 .barras li {
 	margin-bottom: 20px;
 	position:relative;
-	list-style: none;
 	font: 400 14px oswald, sans-serif;
 }
 
@@ -136,15 +134,12 @@ main h4{
 	bottom: -4px;
 	display: block;
 	height: 5px;
-	position: relative;
 	width: inherit;
-	z-index: 1;
 }
 
 .datos ul li {
 	font: 400 15px oswald, sans-serif;
 	margin-bottom: 3px;
-	list-style: none;
 }
 
 .datos ul{
@@ -183,7 +178,6 @@ main h4{
 
 .info li {
 	margin: 0px;
-	list-style: none;
 	width: 400px;
 }
 
@@ -204,6 +198,10 @@ main h4{
 
 .formacion2 ul{
 	padding: 0px 0px;
+}
+
+li{
+	list-style: none;
 }
 
 /*footer
