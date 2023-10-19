@@ -18,58 +18,39 @@ body {
 
 /* Header
 **********/
-.contenedor {
-	max-width: 860px;
-	width: 80%;
-	display: flex;
-	margin: auto;
-	align-items: flex-end;
-}
 
 header {
-	background:#836;
-	border-bottom: 1px solid #848484;
-	padding: 29px 0;
-	overflow: hidden;
-}
-
-header img {
-	border-radius: 90px;
-	border: solid #fff;
-	height: 175px;
-	width: 175px;
-	position: relative;
-}
-
-.titulo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-left: 26%;
+	width: 100%;
 }
 
-h1 {
-	color: #fff;
-	font: 400 40px oswald, sans-serif;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-	line-height: 0px;
+#botonera{
+	width: 100%;
+	background: #fa7171;
+	position: fixed;
 }
 
-h2 {
-	color: #fff;
-	font-style: italic;
-	font: 400 20px oswald, sans-serif;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-}
-
-.datos2 li{
-	color: #fff;
+#botonera nav{
 	display: flex;
-	position: relative;
-	font: 400 14px oswald, sans-serif;
+	justify-content: center;
 }
-.datos2 li p{
-	padding-left: 5px;
+
+#botonera nav a{
+	font-family: "gliker";
+	font-size: 1em;
+	color: #5E3814;
+	padding: 16px 82px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 2px;
+}
+
+#botonera nav a:hover{
+	background-color: #6e9ef8;
+	color: #ffffff;
 }
 
 /* Index
@@ -116,9 +97,42 @@ h2 {
 	color: #5E3814;
 	font-size: 50px;
 }
+
 /* Main
 ***************/
 
+main img {
+	border-radius: 90px;
+	border: solid #fa7171;
+	height: 175px;
+	width: 175px;
+	position: relative;
+}
+
+h1 {
+	color: #5E3814;
+	font-family: "gliker";
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+
+h2 {
+	color: #fff;
+	font-style: italic;
+	font: 400 20px oswald, sans-serif;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.datos2 li{
+	color: #fff;
+	display: flex;
+	position: relative;
+	font: 400 14px oswald, sans-serif;
+}
+.datos2 li p{
+	padding-left: 5px;
+}
 p {
 	font: 400 14px oswald, sans-serif;
 }
@@ -151,10 +165,6 @@ main h4{
 	align-items: stretch;
 }
 
-.sobremi {
-	margin-right: 80px;
-	width: 400px;
-}
 .grupo2{
 	display: flex;
 	flex-direction: column;
