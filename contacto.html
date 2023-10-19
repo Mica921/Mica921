@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="inicio.html">
+    <link href="trabajos.html">
+    <link href="contacto.html">
+</head>
+<body>
+    <header>
+		<section id="botonera">
+			<nav>
+				<a href="inicio.html">INICIO</a>
+				<a>HABILIDADES Y HERRAMIENTAS</a>
+				<a>ACTUALIZACIONES</a>
+				<a href="trabajos.html">TRABAJOS</a>
+				<a href="contacto.html">CONTACTO</a>
+			</nav>
+		</section>
+	</header>
+    
+    <!-- Main -->
+
+	<main>
+        <section class="contenido">
+				<h1>CONTACTO</h1>
+				<p>¿Escribir una línea para decir buenos días, pedir mi currículum o ver si podemos construir algo increíble juntos? ¡Me encantaría saber de ti! Complete su información en el formulario a continuación y espero tener noticias suyas.</p>
+		</section>
+        <section id="formulario">
+            <form method="post" action="mailto:micaela.g1@.gmailcom?subject='Email enviado desde el formulario cv'" target="_blank" enctype="text/plain">
+                <div>
+                    <input type="text" name="Nombre" id="nombre" maxlength="30" placeholder="Nombre" required>
+                    <input type="text" name="Apellido" id="apellido" maxlength="30" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
+                    <input type="tel" name="Telefono" id="telefono" placeholder="Teléfono">
+                </div>
+            </form>
+            <input type="submit" class="boton" value="ENVIAR">
+        </section>
+    </main>
+   
+    <!-- Footer -->
+
+	<footer>
+		<section class="fin">
+			<img src="img/logo-catedra.png" width="100px" height="28px" alt="logo de la catedra"/>
+			<p>Curriculum vitae para Computación III /// Todos los derechos reservados.</p>
+		</section>
+	</footer>
+</body>
+</html>
