@@ -1,7 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@font-face {
+	font-family: Gliker;
+	src: url(fonts/Gliker-Regular.ttf);
+}
 
+*{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-decoration: none;
+}
 body {
 	margin: 0;
 }
@@ -13,7 +23,6 @@ body {
 	width: 80%;
 	display: flex;
 	margin: auto;
-	/*intente cambiar el margin por justify-content: center pero no funciono, no se alineo como tendria*/
 	align-items: flex-end;
 }
 
@@ -63,6 +72,50 @@ h2 {
 	padding-left: 5px;
 }
 
+/* Index
+**************/
+
+.background-img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#boton-index a{
+	position: absolute;
+	font: 400 40px oswald, sans-serif;
+	font-size: 30px;
+	color: #5E3814;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	width: 380px;
+	height: 65.29px;
+	left: 500px;
+	top: 524px;
+	border: 2px solid #5E3814;
+	border-radius: 25px;
+}
+#boton-index a:hover{
+	color: #5E3814;
+	background-color: rgba(255,255,255,1.00);
+	box-shadow: 0.5em 0.5em 0.5em;
+}
+.introduccion{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 25%;
+	left: 2%;
+}
+.introduccion p{
+	font-family: "gliker";
+	width: 40%;
+	text-align: center;
+	color: #5E3814;
+	font-size: 50px;
+}
 /* Main
 ***************/
 
