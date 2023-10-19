@@ -281,18 +281,17 @@ form div{
 
 input{
 	font: 400 18px oswald, sans-serif;;
-	font-size: 1em;
-	color: rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.514);
 	border-radius: 8px;
 	border-style: none;
-	padding: 8px;
+	padding: 10px;
 	margin: 0px 16px 16px 0px;
 	width: 35%;
 }
 
 .boton{
 	font-family: "gliker";
-	font-size: 1em;
+
 	color: #5E3814;
 	background: #fa7171;
 	border-radius: 20px;
