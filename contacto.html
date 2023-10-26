@@ -36,26 +36,21 @@
     
     <!-- Main -->
 
-	<main>
+	<main class="fondo">
         <section class="contenido">
-				<h1>CONTACTO</h1>
+				<h2>CONTACTO</h2>
 				<p>¿Escribir una línea para decir buenos días, pedir mi currículum o ver si podemos construir algo increíble juntos? ¡Me encantaría saber de ti! Complete su información en el formulario a continuación y espero tener noticias suyas.</p>
 		</section>
-        <section id="formulario">
-            <form method="post" action="mailto:micaela.g1@.gmailcom?subject='Email enviado desde el formulario cv'" target="_blank" enctype="text/plain">
-                <div>
-                    <input type="text" name="Nombre" id="nombre" maxlength="30" placeholder="Nombre" required>
-                    <input type="text" name="Apellido" id="apellido" maxlength="30" placeholder="Apellido" required>
-                </div>
-                <div>
-                    <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
-                    <input type="Men" name="Mensaje" id="Mensaje" placeholder="Mensaje">
-                </div>
+        <div class="detalles-formulario-contacto">
+            <form method="post" action="" target="_blank" enctype="text/plain" class="medida-formulario-contacto">
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" placeholder="Nombre" required>
+                <input type="email" name="Correo electrónico" id="Correo-electronico" maxlength="70" placeholder="Correo electrónico" required>
+                <input class="asunto-formulario" type="text" name="Asunto" id="Asunto" maxlength="100" placeholder="Asunto" required>
+                <textarea>Mensaje</textarea>
+                <input type="submit" class="boton" value="ENVIAR">
             </form>
-            <input type="submit" class="boton" value="ENVIAR">
-        </section>
+        </div>
     </main>
-   
     <!-- Footer -->
 
 	<footer>

@@ -249,76 +249,85 @@ main {
 /*main contacto
 *************/
 
+.fondo{
+	background-color: #FEF1EC;
+}
+
 .contenido{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: stretch;
 	gap: 15%;
-	background-color: #ddeaf5;
-	padding: 14% 10% 10% 7%;
+	padding: 10% 10% 5% 7%;
+}
+ .contenido p{
+	color: #EC968A;
+	font-size: 25px;
+	text-align: center;
+	line-height: 45px;
 }
 
-#formulario{
-	background: #ddeaf5;
-	padding: 0% 10% 10% 7%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+.detalles-formulario-contacto{
+	padding: 30px;
+	margin-left: 4%;
+	width: 30%;
 }
 
-#formulario p{
-	font-weight: 700;
-	font-size: 1.2em;
-	color: #F95C50;
-	padding-bottom: 32px;
-}
-
-form{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-}
-
-form div{
-	width: 100%;
-	display: flex;
-}
-
-input{
-	font: 400 18px oswald, sans-serif;;
-	color: rgba(0, 0, 0, 0.514);
+input {
+    background-color: #FEF1EC;
+    width: 42%;
+    height: 44px;
+    margin: 0% 4% 2% 0%;
+    color: #636265;
+    padding-left: 2%;
+    font-size: 16px;
+    border: 1px solid;
 	border-radius: 8px;
-	border-style: none;
-	padding: 10px;
-	margin: 0px 16px 16px 0px;
-	width: 35%;
+	font: 400 14px oswald, sans-serif;
+}
+
+.asunto-formulario {
+	width: 91.4%;
+	border: 1px solid;
+	color: #636265;
+}
+
+.mensaje-formulario {
+	width: 94%;
+	height: 244px;
+}
+
+textarea {
+	background-color: #FEF1EC;
+	font: 400 14px oswald, sans-serif;
+	color: #636265;
+    width: 91.4%;
+    height: 240px;
+    padding-left: 2%;
+    font-size: 16px;
+    border: 1px solid;
+	border-radius: 8px;
 }
 
 .boton{
 	font-family: "gliker";
-
-	color: #5E3814;
-	background: #fa7171;
+	color: #273A51;
+	background: #EC968A;
 	border-radius: 20px;
 	padding: 10px 16px;
 	margin: 8px 0px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	width: inherit;
 }
 
 .boton:hover{
-	color: #FFFFFF;
-	background-color: #6e9ef8;
+	color: #FEF1EC;
+	background-color: #E54327;
 	border: solid;
-	border-color: #FFFFFF;
+	border-color: #EC968A;
 	border-radius: 20px;
 	padding: 7px 13px;
 	transition: all 30ms;
-		
 }
 
 /*footer
