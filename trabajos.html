@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de trabajos</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link href="inicio.html">
@@ -9,10 +10,6 @@
     <link href="contacto.html">
 </head>
 <body>
-    <audio autoplay>
-        <source src="Upbeat and Happy Music.mp3" type="audio/mpeg">
-        <source src="Upbeat and Happy Music.ogv" type="audio/ogg">
-    </audio>
     <header class="orden">
 		<nav class="botonera">
 			<a href="index.html">
@@ -40,8 +37,41 @@
 
     <!-- Main -->
 
-	<main>
-
+	<main class="fondo">
+		<div class="ful-img" id="fulImgBox">
+			<img src="imgs/1.jpg" id="fulImg" alt="">
+			<span onclick="closeImg()">X</span>
+		</div>
+		<h5><span>Mis trabajos</span></h5>
+		<section class="img-gallery">
+			<img src="img/img_galeria/tipo3-5.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-6.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-7.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-8.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-3.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-4.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-2.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/tipo3-1.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-4.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-5.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-6.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-7.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-1.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-2.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/taller3-3.jpg" onclick="openFulImg(this.src)" alt="">
+			<img src="img/img_galeria/etiqueta.jpg" onclick="openFulImg(this.src)" alt="">
+		</section>
     </main>
+
+	<!-- Footer -->
+
+	<footer>
+		<section class="fin">
+			<img src="img/logo-catedra.png" width="100px" height="28px" alt="logo de la catedra"/>
+			<p>Curriculum vitae para Computación III /// Todos los derechos reservados.</p>
+		</section>
+	</footer>
+
+	<script src="script.js"></script>
 </body>
 </html>
