@@ -129,7 +129,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	top: 25%;
+	top: 17%;
+	bottom: 2%;
 	left: 3%;
 }
 .introduccion p{
@@ -138,6 +139,18 @@ header {
 	text-align: center;
 	color: #5E3814;
 	font-size: 50px;
+}
+
+@keyframes rotacion{
+	from{transform: rotateZ(0deg);}
+	to{transform: rotateZ(360deg);}
+}
+
+.flor{
+	animation-name: rotacion;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 /* Main inicio - sobre mi
@@ -169,7 +182,6 @@ main {
 	border: solid #fa7171;
 	height: 175px;
 	width: 175px;
-	position: relative;
 }
 
 /* herramientas
@@ -192,7 +204,6 @@ main {
 }
 
 .grupo1 {
-    gap: 50%;
 	margin-bottom: 5%;
 	display: flex;
 	flex-direction: row;
@@ -201,7 +212,6 @@ main {
 }
 
 .grupo2 {
-	gap: 50%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -251,6 +261,7 @@ main {
 
 .fondo{
 	background-color: #FEF1EC;
+	padding-bottom: 2%;
 }
 
 .contenido{
@@ -332,10 +343,12 @@ textarea {
 
 /*main trabajos
 *****************/
+audio{
+	padding-left: 10%;
+}
 
 h5{
 	text-align: center;
-	position: relative;
 	color: #E54327;
 	font-family: "gliker";
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
@@ -391,6 +404,16 @@ h5{
 	}
 }
 
+/*main actualizaciones
+************************/
+
+.nuevo {
+	padding: 5% 10% 12% 7%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /*footer
 *************/
 
@@ -407,5 +430,28 @@ footer {
 }
 .fin{
 	padding: 2px 0% 2px 7%;
-	margin: auto;
+}
+
+/*REPONSIVE formulario
+*******************/
+@media (max-width:700px){
+	.contenido{
+		flex-direction: column;
+		align-items: center;
+		padding: 10% 15% 5% 12%;;
+	}
+	.detalles-formulario-contacto {
+		padding: 30px;
+		margin-left: 12%;
+		width: 60%;
+		display: flex;
+    	flex-direction: column;
+		align-items: center;
+	}
+	h2{
+		padding-top: 12%;
+	}
+	.contenido p{
+		line-height: 35px;
+	}
 }
