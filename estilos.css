@@ -261,7 +261,7 @@ main {
 
 .fondo{
 	background-color: #FEF1EC;
-	padding-bottom: 2%;
+	padding-bottom: 5%;
 }
 
 .contenido{
@@ -416,20 +416,53 @@ h5{
 
 /*footer
 *************/
-
-footer {
-	padding: 29px 0;
-	background: #273A51;
+.rectangulo-superior-footer{
+	background-color: #273A51;
+	height: 155px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
-.fin p {
-	color: #fff;
-	font-weight:lighter;
-	display: inline;
-	padding-left: 25px;
+.rectangulo-inferior-footer {
+	background-color: #292929;
+	height: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 13px;
+	color: #FEF1EC;
 }
-.fin{
-	padding: 2px 0% 2px 7%;
+
+.redes {
+	font-size: 13px;
+	margin-bottom: revert;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.redes p{
+	color: #FEF1EC;
+	padding-bottom: 8%;
+}
+
+.iconos-redes {
+	display:flex;
+	gap: 10%;
+}
+
+.contenedor-svg-iconos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 1%;
+	align-items: center;
+}
+
+.color-contendor-version-uno {
+	background-color: #F9F9F9;
+	padding: 50px 0px;
+	box-sizing: border-box;
 }
 
 /*REPONSIVE formulario
